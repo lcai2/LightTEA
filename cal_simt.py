@@ -83,11 +83,13 @@ def cal_simt(file_name,pair):
         np.save(file_name,pair_mt)
     return pair_mt
 
-datasets=["ICEWS05-15","YAGO-WIKI50K"] 
+datasets=["ICEWS05-15","YAGO-WIKI"] 
 dataset = datasets[0] # select dataset
 seed_num = 1000 # set the number of seeds
 file_path = "./data/" + dataset + "/"
 file_name = file_path + "simt/simt_" + dataset + "_" + str(seed_num) + ".npy"
 
 tain_pair, test_pair = load_aligned_pair(file_path,ratio = seed_num)
+print("generating...")
 simt = cal_simt(file_name,test_pair)
+print("done!")
