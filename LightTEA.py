@@ -1,4 +1,8 @@
 # import all the requirements
+import os 
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+
 import faiss 
 from utils import *
 from alignment import *
@@ -9,9 +13,6 @@ from args import args
 print(args)
 
 #choose the GPU, "-1" represents using the CPU
-
-import os 
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 
 gpus = tf.config.experimental.list_physical_devices(device_type="GPU")
