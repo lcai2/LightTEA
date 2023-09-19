@@ -4,7 +4,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument(
     '--gpu',
-    default = "7",
+    default = "0",
     type = str,
     help='choose gpu device')
 
