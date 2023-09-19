@@ -10,6 +10,8 @@ cudnn                     8.1.0.77
 faiss-gpu                1.7.2  
 
 # Usage
+Before running the program, you need to unzip the 'data.zip' file.  
+
 On the first run,  you need to use command "python cal_simt.py" to calculate the temporal similarity matrix, then use command "python LightTEA.py" to get the results. The first run may be slow because the graph needs to be preprocessed into binary cache.
 
 For future runs, you only need to use command "python LightTEA.py" to get the results.
