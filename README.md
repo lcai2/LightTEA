@@ -2,11 +2,10 @@
 Codes for IJCAI2023 paper [“An Effective and Efficient Time-aware Entity Alignment Framework via Two-aspect Three-view Label Propagation”](https://www.ijcai.org/proceedings/2023/0558.pdf)
 
 # Environment
-python                    3.7.11   
-tensorflow-gpu       2.6.0  
-keras                       2.6.0  
+python                    3.8.0   
+tensorflow       2.11.1  
+keras                       2.11.0  
 cudatoolkit             11.3.1  
-cudnn                     8.1.0.77   
 faiss-gpu                1.7.2  
 
 # Usage
